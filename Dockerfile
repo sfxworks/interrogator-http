@@ -7,7 +7,7 @@ RUN pip3 install transformers==4.26.1
 RUN pip3 install flask
 
 # Download models
-RUN python3 -c "from clip_interrogator import Config, Interrogator; Interrogator(Config(clip_model_name='ViT-H-14/laion2b_s32b_b79k'))"
+RUN python3 -c "from clip_interrogator import Config, Interrogator; Interrogator(Config(clip_model_name='ViT-L-14/openai'))"
 
 # Set up application
 COPY . /app

@@ -7,7 +7,7 @@ import base64
 app = Flask(__name__)
 
 # Instantiate the Interrogator
-config = Config(clip_model_name="ViT-H-14/laion2b_s32b_b79k")
+config = Config(clip_model_name="ViT-L-14/openai")
 config.apply_low_vram_defaults()
 ci = Interrogator(config)
 
