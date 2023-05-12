@@ -34,6 +34,6 @@ jobs:
         push: true
         platforms: linux/amd64
         tags: ghcr.io/sfxworks/interrogator-http:latest
-        cache-from: type=gha
-        cache-to: type=gha,mode=max
+        cache-from: type=registry,ref=ghcr.io/sfxworks/interrogator-http:buildcache
+        cache-to: type=registry,ref=ghcr.io/sfxworks/interrogator-http:buildcache,mode=max
 
