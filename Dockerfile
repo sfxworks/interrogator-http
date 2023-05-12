@@ -17,3 +17,5 @@ EXPOSE 5000
 
 # Set the command
 CMD ["python3", "main.py"]
+
+RUN pip3 install flask
