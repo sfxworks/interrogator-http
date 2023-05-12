@@ -8,7 +8,7 @@ import torch
 app = Flask(__name__)
 
 # Instantiate the Interrogator
-config = Config(clip_model_name="ViT-H-14/laion2b_s32b_b79k")
+config = Config(clip_model_name="ViT-L-14/openai")
 config.caption_model_name = 'blip-base'
 config.caption_offload = True
 config.clip_offload = True
